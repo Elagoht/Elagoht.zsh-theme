@@ -37,7 +37,7 @@ precmd() {
     PR_HOST='%F{green} %M%f'
   fi
   PROMPT="%B┬[${PR_USER}]─[${PR_HOST}]─[%F{blue} %(3~|.../%2~|%~)%f]\$(virtualenv_prompt_info)\$(ruby_prompt_info)\$(git_prompt_info)%b
-%B└[$PR_PROMPT] %b"
+%B└%(?::[%{$fg_bold[magenta]%} %?%f]─)[$PR_PROMPT] %b"
 RPROMPT="%B\$(git_prompt_status)\${EXECTIME}%b"
   ZSH_THEME_RUBY_PROMPT_PREFIX="─[%F{red} "
   ZSH_THEME_RUBY_PROMPT_SUFFIX="%f]"
