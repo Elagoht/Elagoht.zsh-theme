@@ -32,9 +32,9 @@ precmd() {
     PR_PROMPT='%(?:%{$fg_bold[green]%} #:%{$fg_bold[red]%} #)%f'
   fi
   if [[ -n "$SSH_CLIENT" || -n "$SSH2_CLIENT" ]]; then
-    PR_HOST='%F{yellow}歷%M%f'
+    PR_HOST='%F{yellow} %M%f'
   else
-    PR_HOST='%F{green} %M%f'
+    PR_HOST='%F{green} %M%f'
   fi
   PROMPT="%B┬[${PR_USER}]─[${PR_HOST}]─[%F{blue} %(3~|.../%2~|%~)%f]\$(virtualenv_prompt_info)\$(ruby_prompt_info)\$(git_prompt_info)%b
 %B└%(?::[%{$fg_bold[magenta]%} %?%f]─)[$PR_PROMPT] %b"
@@ -43,7 +43,7 @@ RPROMPT="%B\$(git_prompt_status)\${EXECTIME}%b"
   ZSH_THEME_RUBY_PROMPT_SUFFIX="%f]"
   ZSH_THEME_VIRTUALENV_PREFIX="─[%F{magenta} "
   ZSH_THEME_VIRTUALENV_SUFFIX="%f]"
-  ZSH_THEME_EXECTIME_PROMPT_PREFIX="[%F{yellow}祥"
+  ZSH_THEME_EXECTIME_PROMPT_PREFIX="[%F{yellow} "
   ZSH_THEME_EXECTIME_PROMPT_SUFFIX="%f]─"
   ZSH_THEME_GIT_PROMPT_PREFIX="─[%F{yellow} "
   ZSH_THEME_GIT_PROMPT_SUFFIX=""
@@ -51,8 +51,12 @@ RPROMPT="%B\$(git_prompt_status)\${EXECTIME}%b"
   ZSH_THEME_GIT_PROMPT_CLEAN="%f]"
   ZSH_THEME_GIT_PROMPT_ADDED="[%F{green}%f]─"
   ZSH_THEME_GIT_PROMPT_MODIFIED="[%F{yellow}%f]─"
-  ZSH_THEME_GIT_PROMPT_DELETED="[%F{red}﯊%f]─"
-  ZSH_THEME_GIT_PROMPT_RENAMED="[%F{magenta}%f]─"
-  ZSH_THEME_GIT_PROMPT_UNMERGED="[%F{cyan}%f]─"
-  ZSH_THEME_GIT_PROMPT_UNTRACKED="[%F{blue}%f]─"
+  ZSH_THEME_GIT_PROMPT_DELETED="[%F{red}%f]─"
+  ZSH_THEME_GIT_PROMPT_RENAMED="[%F{magenta}%f]─"
+  ZSH_THEME_GIT_PROMPT_UNMERGED="[%F{cyan}%f]─"
+  ZSH_THEME_GIT_PROMPT_UNTRACKED="[%F{blue}%f]─"
 }
+
+
+
+
