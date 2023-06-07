@@ -32,11 +32,11 @@ Here is a one-liner installation code...
 ...for default theme:
 
 ```sh
-curl -sfSL "https://raw.githubusercontent.com/Elagoht/BashPlusZshTheme/main/install.sh" | bash
+curl -sfSL "https://raw.githubusercontent.com/Elagoht/Elagoht.zsh-theme/main/install.sh" | bash
 ```
 
 ...for safe (iconless) theme:
 
 ```sh
-curl -sfSL "https://raw.githubusercontent.com/Elagoht/BashPlusZshTheme/main/install.sh" | bash safe
+curl -sfSL "https://raw.githubusercontent.com/Elagoht/Elagoht.zsh-theme/main/install.sh" | bash safe
 ```
