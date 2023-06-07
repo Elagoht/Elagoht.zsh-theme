@@ -38,5 +38,5 @@ curl -sfSL "https://raw.githubusercontent.com/Elagoht/Elagoht.zsh-theme/main/ins
 ...for safe (iconless) theme:
 
 ```sh
-curl -sfSL "https://raw.githubusercontent.com/Elagoht/Elagoht.zsh-theme/main/install.sh" | bash safe
+bash <(curl -sfSL "https://raw.githubusercontent.com/Elagoht/Elagoht.zsh-theme/main/install.sh") safe
 ```
