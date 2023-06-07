@@ -1,7 +1,7 @@
 #!/bin/env bash
 
 # Select which theme will be installed
-if [ "$1" == "safe" ]
+if [ "$1" = "safe" ]
 then
     theme="elagoht-safe"
 else
