@@ -9,9 +9,7 @@ else
 fi
 
 # Download the theme
-curl \
-    -sfSL https://raw.githubusercontent.com/Elagoht/Elagoht.zsh-theme/main/$theme.zsh-theme \
-    -o ~/.oh-my-zsh/themes/$theme.zsh-theme
+curl -sfSL "https://raw.githubusercontent.com/Elagoht/Elagoht.zsh-theme/main/$theme.zsh-theme" -o ~/.oh-my-zsh/themes/$theme.zsh-theme
 
 # Activate the theme
 sed -i "s/^ZSH_THEME=.*/ZSH_THEME='$theme'/" ~/.zshrc
