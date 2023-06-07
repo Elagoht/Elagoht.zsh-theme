@@ -1,47 +1,42 @@
 # Elagoht ZSH THEME
 
-This is a oh-my-zsh theme made by Elagoht. So you need to install oh-my-zsh first!
+![ZSH](https://shields.io/badge/Oh_My-Zsh-4EAA25?logo=gnubash&logoColor=white&style=for-the-badge)
+![Theme](https://shields.io/badge/Theme-blue?logo=addthis&logoColor=white&style=for-the-badge)
 
-Exaple prompt:
+This is a powerfull two line oh-my-zsh prompt theme. 
 
-![Example Prompt](https://raw.githubusercontent.com/Elagoht/Elagoht.zsh-theme/main/screenshot.png)
+![Example Prompt](screenshot.png)
 
 There is also a safe version without icons. You can safely use it on TTY and Termux or something else.
 
-Default version requires any of nerd font.
+## Requirements 
 
-# Features:
+* Install oh-my-zsh on [https://ohmyz.sh](https://ohmyz.sh)
+* Default version requires any of a nerd font.
+
+## Features:
 
 * Non-root user's name shown cyan, root user's name shown red.
 * Local machine's name shown green, ssh machine's name shown yellow.
 * Only 2 subfolder shown in indicator.
-* Virtual Environment indicator support.
+* Virtual environment indicator support.
 * Git indicator support.
 * Git Status Badges at right prompt.
 * Command execution time on right prompt.
+* Exit status shown if non-zero.
 
-# Installation
+## Installation
 
-Install oh-my-zsh on [https://ohmyz.sh](https://ohmyz.sh)
+Here is a one-liner installation code...
 
-Move **elagoht.zsh-theme** to **~/.oh-my-zsh/themes**. Move **elagoht-safe.zsh-theme** for iconless version.
+...for default theme:
 
-## Enable Virtualenv
-
-Edit "plugins" line in ~/.zshrc file as:
-
-```
-plugins=(git virtualenv)
+```sh
+curl -sfSL "https://raw.githubusercontent.com/Elagoht/BashPlusZshTheme/main/install.sh" | bash
 ```
 
-Both versions needs this edit.
+...for safe (iconless) theme:
 
-Set ZSH_THEME variable to "elagoht" by writing:
-
+```sh
+curl -sfSL "https://raw.githubusercontent.com/Elagoht/BashPlusZshTheme/main/install.sh" | bash safe
 ```
-ZSH_THEME="elagoht"
-```
-
-"elagoht-safe" for iconless version.
-
-Then restart your terminal to see the changes. (You must use zsh, not bash or something else.)
