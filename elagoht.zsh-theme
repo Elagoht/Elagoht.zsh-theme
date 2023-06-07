@@ -56,7 +56,3 @@ RPROMPT="%B\$(git_prompt_status)\${EXECTIME}%b"
   ZSH_THEME_GIT_PROMPT_UNMERGED="[%F{cyan}%f]─"
   ZSH_THEME_GIT_PROMPT_UNTRACKED="[%F{blue}%f]─"
 }
-
-
-
-
